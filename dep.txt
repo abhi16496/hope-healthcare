@@ -1,0 +1,62 @@
+errors - 
+[plugin:vite:react-babel] C:\Users\Public\doctors client\src\components\layout\Footer.jsx: Expected corresponding JSX closing tag for <footer>. (119:6)
+  122 | };
+C:/Users/Public/doctors client/src/components/layout/Footer.jsx:119:6
+117|            </div>
+118|          </div>
+119|        </div>
+   |        ^
+120|      </footer>
+121|    );
+    at constructor (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:365:19)
+    at JSXParserMixin.raise (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:6599:19)
+    at JSXParserMixin.jsxParseElementAt (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:4727:16)
+    at JSXParserMixin.jsxParseElement (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:4749:17)
+    at JSXParserMixin.parseExprAtom (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:4759:19)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11081:23)
+    at JSXParserMixin.parseUpdate (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11066:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11046:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10899:61)
+    at JSXParserMixin.parseExprOps (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10904:23)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10881:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10831:21)
+    at C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10800:39
+    at JSXParserMixin.allowInAnd (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:12426:12)
+    at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10800:17)
+    at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:12493:17)
+    at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11675:28)
+    at JSXParserMixin.parseExprAtom (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11331:23)
+    at JSXParserMixin.parseExprAtom (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:4764:20)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11081:23)
+    at JSXParserMixin.parseUpdate (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11066:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11046:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10899:61)
+    at JSXParserMixin.parseExprOps (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10904:23)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10881:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10831:21)
+    at JSXParserMixin.parseExpressionBase (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10784:23)
+    at C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10780:39
+    at JSXParserMixin.allowInAnd (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:12421:16)
+    at JSXParserMixin.parseExpression (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10780:17)
+    at JSXParserMixin.parseReturnStatement (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:13142:28)
+    at JSXParserMixin.parseStatementContent (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:12798:21)
+    at JSXParserMixin.parseStatementLike (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:12767:17)
+    at JSXParserMixin.parseStatementListItem (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:12747:17)
+    at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:13316:61)
+    at JSXParserMixin.parseBlockBody (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:13309:10)
+    at JSXParserMixin.parseBlock (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:13297:10)
+    at JSXParserMixin.parseFunctionBody (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:12100:24)
+    at JSXParserMixin.parseArrowExpression (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:12075:10)
+    at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11687:12)
+    at JSXParserMixin.parseExprAtom (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11331:23)
+    at JSXParserMixin.parseExprAtom (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:4764:20)
+    at JSXParserMixin.parseExprSubscripts (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11081:23)
+    at JSXParserMixin.parseUpdate (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11066:21)
+    at JSXParserMixin.parseMaybeUnary (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:11046:23)
+    at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10899:61)
+    at JSXParserMixin.parseExprOps (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10904:23)
+    at JSXParserMixin.parseMaybeConditional (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10881:23)
+    at JSXParserMixin.parseMaybeAssign (C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10831:21)
+    at C:\Users\Public\doctors client\node_modules\@babel\parser\lib\index.js:10800:39
+Click outside, press Esc key, or fix the code to dismiss.
+You can also disable this overlay by setting server.hmr.overlay to false in vite.config.js.

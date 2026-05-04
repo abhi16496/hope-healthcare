@@ -1,0 +1,164 @@
+.doctor-section {
+  padding: 6rem 0;
+}
+
+.doctor-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.doctor-image-col {
+  flex: 1;
+  position: relative;
+}
+
+.doctor-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4/5;
+  background-color: var(--primary);
+}
+
+.doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  border-left: 4px solid var(--accent);
+}
+
+.exp-years {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.exp-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.doctor-info-col {
+  flex: 1;
+}
+
+.doc-subtitle {
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.doc-title {
+  font-size: 3rem;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.doc-desc {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.cert-box {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 16px;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.cert-box:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.cert-icon {
+  background-color: var(--primary);
+  color: var(--white);
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cert-details h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.cert-details p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.cert-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cert-issuer, .cert-date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--dark);
+  background-color: var(--light);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.doc-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill-tag {
+  background-color: var(--accent-light);
+  color: var(--accent);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .doctor-wrapper {
+    flex-direction: column;
+  }
+  .doctor-image-col {
+    max-width: 400px;
+    margin: 0 auto 3rem auto;
+  }
+}

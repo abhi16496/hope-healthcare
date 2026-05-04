@@ -1,0 +1,85 @@
+.emergency-section {
+  padding: 4rem 0;
+  background-color: var(--white);
+}
+
+.emergency-wrapper {
+  background: linear-gradient(135deg, var(--dark), #1a1b26);
+  border-radius: 24px;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  color: var(--white);
+  box-shadow: var(--shadow-lg);
+}
+
+.emergency-content {
+  flex: 1;
+  max-width: 400px;
+}
+
+.emergency-content h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.emergency-content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+.emergency-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex: 2;
+}
+
+.e-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  flex: 1;
+  transition: var(--transition);
+}
+
+.e-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.e-icon {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+
+.e-card h4 {
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.e-card p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .emergency-wrapper {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+  .emergency-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .emergency-cards {
+    flex-direction: column;
+    width: 100%;
+  }
+}

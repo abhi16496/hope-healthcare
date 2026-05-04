@@ -1,0 +1,293 @@
+.top-bar {
+  background: var(--dark);
+  color: var(--gray-300);
+  font-size: 0.8rem;
+  padding: 8px 0;
+}
+.quote-banner {
+  background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+  color: var(--white);
+  padding: 6px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.quote-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.quote-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+.quote-icon {
+  opacity: 0.9;
+  width: 16px;
+  height: 16px;
+  animation: pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+.top-bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar-left, .top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.top-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.top-bar-link {
+  color: var(--gray-300);
+  transition: var(--transition-fast);
+}
+.top-bar-link:hover {
+  color: var(--white);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: var(--transition);
+}
+.navbar-scrolled {
+  box-shadow: var(--shadow-md);
+}
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  position: relative;
+}
+
+/* Brand */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.navbar-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+.navbar-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-brand-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.2;
+}
+.navbar-brand-tagline {
+  font-size: 0.7rem;
+  color: var(--gray-500);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Actions Area */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Menu */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.navbar-link {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.navbar-link:hover,
+.navbar-link.active {
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+/* Dropdown */
+.navbar-dropdown {
+  position: relative;
+}
+.navbar-dropdown-trigger {
+  user-select: none;
+}
+.dropdown-icon {
+  transition: transform 0.3s ease;
+  opacity: 0.7;
+}
+.navbar-dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+  color: var(--primary);
+  opacity: 1;
+}
+.navbar-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 8px;
+  min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: var(--transition);
+  z-index: 100;
+}
+.navbar-dropdown:hover .navbar-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.navbar-dropdown-link {
+  display: block;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+.navbar-dropdown-link:hover,
+.navbar-dropdown-link.active {
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+/* CTA Button */
+.navbar-cta {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 160px; /* Ensure enough space for centered text */
+}
+
+@media (max-width: 1024px) {
+  .navbar-actions {
+    gap: 12px;
+  }
+  .navbar-cta {
+    min-width: auto;
+    padding: 8px 16px;
+  }
+}
+
+/* Toggle */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--dark);
+  padding: 4px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .navbar-cta {
+    display: none;
+  }
+  .navbar-links {
+    gap: 0;
+  }
+  .navbar-link {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar-left .top-bar-item:last-child {
+    display: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--white);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 24px 24px;
+    box-shadow: var(--shadow-xl);
+    transition: var(--transition);
+    z-index: 999;
+  }
+  .navbar-menu-open {
+    right: 0;
+  }
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+  }
+  .navbar-link {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+  .navbar-dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    padding: 0 0 0 16px;
+  }
+  .navbar-actions {
+    gap: 10px;
+  }
+  .navbar-cta {
+    display: none; /* Hide from header on mobile, move to menu if needed */
+  }
+  /* If we want the CTA inside the mobile menu, we'd need to duplicate it or move it in JSX. 
+     For now, following the pattern of keeping header clean on mobile. */
+}

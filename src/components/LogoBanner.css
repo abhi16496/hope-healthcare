@@ -1,0 +1,42 @@
+.logo-banner {
+  background-color: var(--white);
+  padding: 130px 0 40px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-banner-img {
+  max-height: 110px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.logo-banner-tagline {
+  font-size: 1.1rem;
+  color: var(--dark);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .logo-banner {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  .logo-banner-img {
+    max-height: 80px;
+  }
+  .logo-banner-tagline {
+    font-size: 0.9rem;
+  }
+}

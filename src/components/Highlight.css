@@ -1,0 +1,125 @@
+.highlight-section {
+  background-color: var(--accent-light);
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(42, 157, 143, 0.1) 0%, rgba(42, 157, 143, 0) 70%);
+  border-radius: 50%;
+}
+
+.highlight-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.highlight-image {
+  height: 500px;
+  background: linear-gradient(135deg, var(--accent), var(--secondary));
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.khatna-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.khatna-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.khatna-card h3 {
+  color: var(--accent);
+}
+
+.highlight-badge {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.highlight-title {
+  font-size: 3rem;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.highlight-desc {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.highlight-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.check-icon {
+  color: var(--accent);
+}
+
+.highlight-note {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+}
+
+.highlight-btn {
+  background-color: var(--accent);
+}
+
+@media (max-width: 992px) {
+  .highlight-container {
+    grid-template-columns: 1fr;
+  }
+  .highlight-image {
+    order: 2;
+    height: 350px;
+  }
+  .highlight-content {
+    order: 1;
+  }
+  .highlight-features {
+    grid-template-columns: 1fr;
+  }
+}

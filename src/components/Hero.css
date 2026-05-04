@@ -1,0 +1,163 @@
+.hero-split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  padding-top: 80px; /* Offset for fixed navbar */
+  background-color: var(--white);
+}
+
+.hero-brand-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  background-color: var(--white);
+}
+
+.hero-brand-content {
+  max-width: 600px;
+  width: 100%;
+}
+
+.hero-massive-logo {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center to ensure the text spreads evenly */
+  width: max-content; /* Make container exactly as wide as the logo image */
+}
+
+.hero-logo-img {
+  max-height: 250px; /* Enormous dedicated size */
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.hero-logo-tagline {
+  font-size: 1.2rem;
+  color: var(--dark);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--dark);
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 45px;
+  width: 100%;
+  text-align: justify;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  display: inline-flex;
+}
+
+.btn-outline.text-dark {
+  border-color: var(--border-color);
+  color: var(--dark);
+  background: transparent;
+}
+.btn-outline.text-dark:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(0, 86, 179, 0.05);
+}
+
+.hero-image-side {
+  position: relative;
+  background-image: url('/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px; /* Ensures minimum height on very small screens */
+}
+
+/* 
+  The Magic Overlay:
+  Uses Medical Blue to tint the right side image, 
+  ensuring perfect color matching with the logo on the left.
+*/
+.hero-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  opacity: 0.65;
+  mix-blend-mode: multiply;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-split-section {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  
+  .hero-brand-side {
+    padding: 60px 30px;
+    order: 1;
+  }
+  
+  .hero-image-side {
+    order: 2;
+    min-height: 50vh;
+  }
+  
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-logo-img {
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
